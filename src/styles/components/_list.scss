@@ -1,0 +1,38 @@
+.list-default{
+  @include list-default;
+}
+
+.list-grid{
+  @include list-default;
+  display: flex;
+  flex-flow: wrap;
+  li{
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    position: relative;
+  }
+}
+
+.list-seasons{
+  @include list-default;
+  display: inline-block;
+  li{
+    display: inline-block;
+    button{
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.list-episodes{
+  @include list-default;
+  li{
+    padding: 1rem 0;
+    border-top: 1px solid $border-color;
+  }
+  .time{
+    float: right;
+  }
+}

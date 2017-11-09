@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+header {
+  padding: 1rem 0;
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 2rem; }
+  header .container {
+    display: flex;
+    align-items: center; }
+  header .logo {
+    font-size: 2rem;
+    text-decoration: none; }
+  header .user-bar {
+    margin-left: auto; }
+    header .user-bar a {
+      text-decoration: none; }
+
+.list-default {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.list-grid {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: wrap; }
+  .list-grid li {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    position: relative; }
+
+.list-seasons {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: inline-block; }
+  .list-seasons li {
+    display: inline-block; }
+    .list-seasons li button {
+      background: none;
+      border: none;
+      cursor: pointer; }
+
+.list-episodes {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .list-episodes li {
+    padding: 1rem 0;
+    border-top: 1px solid #DDD; }
+  .list-episodes .time {
+    float: right; }
+
+.filter label {
+  display: block;
+  margin-bottom: 1rem; }
+
+@media (min-width: 768px) {
+  .filter {
+    display: flex;
+    justify-content: flex-start; }
+    .filter label {
+      margin-right: 1rem; } }
+
+.card {
+  width: 160px;
+  position: relative; }
+  .card:hover .fa-times {
+    display: block; }
+  .card:hover .poster-bg:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); }
+  .card .fa-times {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #FFF;
+    z-index: 10;
+    display: none;
+    cursor: pointer; }
+  .card a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #333; }
+  .card .poster-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 235px;
+    position: relative; }
+    .card .poster-bg img {
+      visibility: hidden; }
+  .card h4 {
+    font-size: 14px; }
+
+.detail {
+  display: flex; }
+  .detail aside {
+    max-width: 300px;
+    margin-right: 2rem; }
+    .detail aside img {
+      width: 100%;
+      margin-bottom: 1rem; }
+    .detail aside h1 {
+      font-size: 20px; }
+    .detail aside .btn-favorite {
+      cursor: pointer;
+      border: none;
+      background: none;
+      outline: none; }
+      .detail aside .btn-favorite.active .fa:before {
+        content: '\f004'; }
+      .detail aside .btn-favorite .fa {
+        color: #951b81;
+        margin-right: .5rem; }
+  .detail .content {
+    flex: 1; }
+    .detail .content h1 {
+      margin-top: 0; }
+  .detail .seasons {
+    margin-bottom: 1rem; }
+    .detail .seasons button.active {
+      font-weight: bold;
+      color: #951b81; }
+
+.activity-indicator {
+  display: flex;
+  justify-content: center; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333; }
+
+a {
+  color: #951b81; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.text-center {
+  text-align: center; }
